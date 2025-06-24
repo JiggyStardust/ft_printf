@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sniemela <sniemela@student.42.fr>          +#+  +:+       +#+        */
+/*   By: sniemela <sniemela@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/21 10:50:16 by sniemela          #+#    #+#             */
-/*   Updated: 2024/05/29 14:56:29 by sniemela         ###   ########.fr       */
+/*   Updated: 2025/06/24 14:44:30 by sniemela         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,8 +73,10 @@ int	ft_printf(const char *s, ...)
 	int		count;
 
 	va_start(ap, s);
+	if (!s)
+		return (-1);
 	count = 0;
-	while (*s != '\0')
+	while (*s++ != '\0')
 	{
 		if (*s == '%')
 		{
@@ -89,7 +91,6 @@ int	ft_printf(const char *s, ...)
 				return (-1);
 			count++;
 		}
-		s++;
 	}
 	va_end(ap);
 	return (count);

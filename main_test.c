@@ -26,6 +26,13 @@ void	strings_without_conversions()
 	printf("\nreturn value: %d", printf(""));
 
 	printf("\n\nft_printf: \n");
+	printf("\nreturn value: %d", ft_printf(0));
+
+	printf("\n\nprintf: \n");
+	printf("\nreturn value: %d", printf(0));
+
+
+	printf("\n\nft_printf: \n");
 	printf("\nreturn value: %d", ft_printf("HeLLo TheRe?)_(*&*^!)"));
 
 	printf("\n\nprintf: \n");
