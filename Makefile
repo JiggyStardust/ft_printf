@@ -6,7 +6,7 @@
 #    By: sniemela <sniemela@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/21 10:50:52 by sniemela          #+#    #+#              #
-#    Updated: 2025/06/24 09:54:00 by sniemela         ###   ########.fr        #
+#    Updated: 2025/06/24 14:23:09 by sniemela         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,8 +30,8 @@ $(NAME): $(OBJS)
 
 all: $(NAME)
 
-tester: $(NAME) test_printf.c
-	$(CC) $(CFLAGS) test_printf.c -L. -lftprintf -o tester
+tester: $(NAME) main_test.c
+	$(CC) $(CFLAGS) main_test.c -L. -lftprintf -o tester
 
 
 clean:
