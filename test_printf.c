@@ -26,10 +26,10 @@ void	strings_without_conversions()
 	printf("\nreturn value: %d", printf(""));
 
 	printf("\n\nft_printf: \n");
-	printf("\nreturn value: %d", ft_printf(""));
+	// printf("\nreturn value: %d", ft_printf(0));
 
 	printf("\n\nprintf: \n");
-	printf("\nreturn value: %d", printf(""));
+	printf("\nreturn value: %d", printf(0));
 
 	printf("\n\nft_printf: \n");
 	printf("\nreturn value: %d", ft_printf("HeLLo TheRe?)_(*&*^!)"));
@@ -37,17 +37,17 @@ void	strings_without_conversions()
 	printf("\n\nprintf: \n");
 	printf("\nreturn value: %d", printf("HeLLo TheRe?)_(*&*^!)"));
 
-		printf("\n\nft_printf: \n");
-	printf("\nreturn value: %d", ft_printf("\n"));
+	printf("\n\nft_printf: \n");
+	printf("\nreturn value: %d", ft_printf("''''jou'\""));
 
 	printf("\n\nprintf: \n");
-	printf("\nreturn value: %d", printf("\n"));
+	printf("\nreturn value: %d", printf("''''jou'\""));
 
-		printf("\n\nft_printf: \n");
-	printf("\nreturn value: %d", ft_printf("\n"));
+	printf("\n\nft_printf: \n");
+	printf("\nreturn value: %d", ft_printf("Wouldn't it be nice if we were older?\nThen we wouldn't have to wait so long\nAnd wouldn't it be nice to live together\nIn the kind of world where we belong?\nYou know it's gonna make it that much better\nWhen we can say goodnight and stay together\nWouldn't it be nice if we could wake up\nIn the morning when the day is new?\nAnd after having spent the day together\nHold each other close the whole night through\nHappy times together we've been spending\nI wish that every kiss was never ending\nOh, wouldn't it be nice?"));
 
 	printf("\n\nprintf: \n");
-	printf("\nreturn value: %d", printf("\n"));
+	printf("\nreturn value: %d", printf("Wouldn't it be nice if we were older?\nThen we wouldn't have to wait so long\nAnd wouldn't it be nice to live together\nIn the kind of world where we belong?\nYou know it's gonna make it that much better\nWhen we can say goodnight and stay together\nWouldn't it be nice if we could wake up\nIn the morning when the day is new?\nAnd after having spent the day together\nHold each other close the whole night through\nHappy times together we've been spending\nI wish that every kiss was never ending\nOh, wouldn't it be nice?"));
 }
 
 void	premade_test()
