@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: sniemela <sniemela@student.42.fr>          +#+  +:+       +#+         #
+#    By: sniemela <sniemela@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/21 10:50:52 by sniemela          #+#    #+#              #
-#    Updated: 2024/05/28 11:54:22 by sniemela         ###   ########.fr        #
+#    Updated: 2025/06/24 09:54:00 by sniemela         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,11 +30,15 @@ $(NAME): $(OBJS)
 
 all: $(NAME)
 
+tester: $(NAME) test_printf.c
+	$(CC) $(CFLAGS) test_printf.c -L. -lftprintf -o tester
+
+
 clean:
 	rm -f $(OBJS)
 
 fclean: clean
-	rm -f $(NAME)
+	rm -f $(NAME) tester
 
 re: fclean all
 
